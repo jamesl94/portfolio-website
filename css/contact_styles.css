@@ -1,0 +1,117 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	background-color: #DFE2DB;
+}
+
+.nav{
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 10px 20px;
+}
+
+.nav a{
+	transition: color 600ms;
+	-webkit-transition: color 600ms;
+}
+
+.nav a:hover{
+	color: #ff0;
+	text-decoration: none;
+}
+
+.nav ul{
+	float:right;
+}
+
+.nav ul li{
+	display: inline-block;
+}
+
+.nav ul li a{
+	background-color: transparent;
+}
+
+.container{
+	margin-top: 100px;
+}
+
+.container .container{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.column{
+	text-align: left;
+	margin: auto;
+	width: 35%;
+	display: inline-block;
+}
+
+.header{
+	text-align: center;
+}
+
+.email{
+	width: 40%;
+	margin: auto;
+	text-align: center;
+	border: solid black;
+}
+
+.other-contact p{
+	text-align: center;
+	font-size: 2em;
+}
+
+.button-container{
+	clear: both;
+	margin: 0 auto;
+	position: center;
+	text-align: center;
+}
+
+.button{
+	width: 20%;
+	display: inline-block;
+	clear: both;
+	border: solid blue;
+	text-align: center;
+}
+
+.glyphicon:hover{
+	color: green;
+}
+/*Typography*/
+
+body{
+	font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+.email p{
+	font-family: times, courier, serif;
+	font-size: 2em;
+	color: blue;
+}
+
+.nav ul{
+	margin: 0 0 10px 0;
+}
+
+.nav ul li a{
+	text-decoration: none;
+	font-size: 14px;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+	color: white;	
+	text-transform: uppercase;
+	letter-spacing: .05em;
+}

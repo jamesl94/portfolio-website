@@ -1,0 +1,179 @@
+body{
+	position: relative;
+	background-color: #fffeea;
+}
+
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.anchor{
+	padding-top: 50px;
+}
+
+/**** Navbar ****/
+nav .navbar-toggle-collapsed{
+	float: right;
+}
+
+nav .dropdown{
+	padding-right: 20px;
+}
+
+nav .navbar-left{
+	float: left;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+
+/**** Home ****/
+#menu{
+	text-align: center;
+}
+
+.textbox{
+	border: solid;
+	border-radius: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.btn{
+	color: blue;
+}
+
+.btn:hover{
+	background-color:pink;
+}
+
+/**** Calculator ****/
+.calculator-body{
+	border: solid 2px;
+	border-radius: 4px;
+	width: 100%;
+	height: 300px;
+	margin-top: 20px;
+}
+
+.calculator-text{
+	position: relative;
+	top: 10px;
+	width: 80%;
+	margin: 0 auto;
+	height: 20px;
+	border: 2px solid black;
+	border-radius: 4px
+}
+
+#calculator-output{
+	font-size: 1vw;
+	color: black;
+	text-align: right;
+}
+
+.calculator-btn{
+		width: 100%;
+		margin-top: 20px;
+	  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/**** Work ****/
+#work h3{
+	text-align:center;
+}
+
+#work img{
+	display: block;
+	width: 210px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#work .info{
+	position: absolute;
+	top: 15%;
+	left: 28%;
+	color:#000;
+	font-family: Futura, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.5em;
+	line-height: 1.6;
+	display: none;
+}
+
+.project-title{
+	font-weight: 100;
+}
+/**** About ****/
+
+/**** FAQ  ****/
+.learn-more{
+	text-align: left;
+	float: left;
+}
+
+#accordion{
+	margin-top: 20px;
+}
+
+/**** Modal ****/
+.resume-modal{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.modal-button{
+	float: right;
+	padding-top: 15px;
+}
+
+#resume{
+	height: 500px;
+	width: 100%;
+	padding: 10px;
+}
+
+/**** Contact ****/
+#contactsection{
+	background-image: url(../img/ocean.jpg);
+	color: white;
+	padding: 20px 10px 0 10px;
+}
+
+#map {
+	height: 300px;
+	width: 100%;
+}
+
+#contacttext a{
+	color: white;
+}
+/**** Footer ****/
+footer p{
+	float: left;
+}
+
+
+
+
+/*Typography*/
+body{
+	font-family: Poiret One, Futura, Helvetica, Arial, sans-serif;
+	font-weight: 100;
+}
+
+nav{
+	color: white;
+}
+
+
+
+
+
