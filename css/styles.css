@@ -27,8 +27,18 @@ nav .navbar-left{
 	padding-left: 20px;
 }
 
-/**** Home ****/
-#menu{
+/**** Carousel ****/
+.carousel.slide{
+	width: 100%;
+}
+.carousel-indicators .active{
+	background-color: blue;
+}
+.carousel-caption{
+	color: blue;
+}
+/**** About ****/
+#about{
 	text-align: center;
 }
 
@@ -130,8 +140,9 @@ nav .navbar-left{
 }
 
 .modal-button{
-	float: right;
-	padding-top: 15px;
+	float: left;
+	padding-left: 15px;
+	padding-top: 25px;
 }
 
 #resume{

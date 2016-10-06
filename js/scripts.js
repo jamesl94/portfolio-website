@@ -47,7 +47,7 @@ $(document).ready(function(){
 
   //Stellar
   $.stellar({
-    verticalOffset: 800
+    verticalOffset: 30
   });
 
 
@@ -76,19 +76,6 @@ $(document).ready(function(){
     }
   });
 
-  //Works section
-  console.log(works[0][0]);
-  for (var i = 0; i < works.length; ++i){
-    $("#workrow").append("\
-      <div class='col-md-4 col-xs-6'>\
-        <a href='#' class='work-img'>\
-          <img class='img-responsive' src='" + works[i].pic + "'  alt='kitten'>\
-          <span class='info'><p class='proj-title'>Title:</p> " + works[i].title + " </span>\
-        </a>\
-      </div>\
-    ");
-
-    };
 
   $(".work-img").mouseenter( function() {
     $(".info", this).show()
@@ -97,7 +84,6 @@ $(document).ready(function(){
   });
 
   images = $("#workrow img");
-  console.log(images[i])
   for (var i = 0; i < images.length; ++i){
     if (i % 2 === 0){
       $(images[i]).css("border", "solid 2px red");
@@ -116,12 +102,12 @@ $(document).ready(function(){
           console.log(numbers);
           $("#calculator-output").html(numbers);
           return false
-        }    
+        }
         if (val === "="){
           answer = eval(numbers);
           $("#calculator-output").html(answer);
           numbers = answer;
-          numbers = numbers.toString(); 
+          numbers = numbers.toString();
           return false
         }
         numbers = numbers.concat(val);
