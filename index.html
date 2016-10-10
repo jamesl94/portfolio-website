@@ -91,7 +91,6 @@
       </div>
     </div><!--End home container-->
     <div class="anchor container" id='about'>
-      <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4 col-xs-12">
           <div class="textbox">
@@ -100,7 +99,7 @@
           some projects from past engineering classes, and a little about
           myself. I wrote this portfolio in HTML, CSS using Bootstrap, JavaScript,
           and jQuery.</p>
-            <p><a class="btn btn-default" data-toggle="tooltip" href="http://www.google.com"
+            <p><a class="btn btn-default" data-toggle="tooltip" href="https://github.com/jamesl94/portfolio-website"
             data-placement="bottom" title="GitHub">See the Code &raquo;</a></p>
           </div>
         </div><!-- /col -->
@@ -111,102 +110,122 @@
             CareerFoundry. Most of this portfolio code was written in the first 2
             months, and after that I created a e-commerce website using Ruby on Rails.</p>
             <p><a class="btn btn-default" data-toggle="tooltip" href="https://jlipecfapp.herokuapp.com/" data-placement="bottom" title="Heroku">See the Site &raquo;</a>
+          </div><!-- /textbox -->
+        </div><!-- /col -->
+        <div class="col-md-4 col-xs-12">
+          <div class="textbox">
+          <!-- Modal -->
+          <div class="modal fade kinetics-modal" id="kinetics-report" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">Kinetics Report</h4>
+                </div>
+                <div class="modal-body">
+                  <embed id="kinetics-modal" src="img/kinetics_report.pdf">
+                </div>
+              </div>
+            </div>
           </div>
-       </div><!-- /col -->
-       <div class="col-md-4 col-xs-12">
-        <div class="textbox">
-          <h2 align="center">Kinetics Project</h2>
-          <p>As part of a final project in a chemical kinetics class I used Python
-          to help deduce an unknown reaction mecahnism from experimental results.
-          This class provided a lot of experience using scientific Python libraries
-          to do calculations and plotting.</p>
-          <p><a class="btn btn-default" data-toggle="tooltip" href="https://github.com/jamesl94/kinetics-project/blob/master/final_project.ipynb" data-placement="bottom" title="GitHub">See the Code &raquo;</a>
-        </div>
+            <h2 align="center">Kinetics Project</h2>
+            <p>As part of a final project in a chemical kinetics class I used Python
+            to help deduce an unknown reaction mecahnism from experimental results.
+            This class provided a lot of experience using scientific Python libraries
+            to do calculations and plotting.</p>
+            <p>
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#kinetics-report">
+                Read the Report &raquo;
+              </button>
+              <span><a class="btn btn-default" data-toggle="tooltip" href="https://github.com/jamesl94/kinetics-project/blob/master/final_project.ipynb" data-placement="bottom" title="GitHub">See the Code &raquo;</a></span>
+            </p>
+          </div><!-- /textbox -->
         </div><!-- /col -->
       </div><!-- /row -->
-      <div class="row">
-        <div class="col-xs-6 col-xs-offset-3">
-          <div class="jumbotron">
-            <h4>This is a calculator written in Javascript</h1>
-            <div class="calculator-body">
-              <div class="calculator-text">
-                <p id="calculator-output"></p>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn" value="1">1</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn" value="2">2</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn" value="3">3</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn calculator-operator" value="/">/</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn" value="4">4</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn" value="5">5</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn" value="6">6</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn calculator-operator" value="*">*</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn" value="7">7</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn" value="8">8</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn" value="9">9</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn calculator-operator" value="-">-</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn" value="0">0</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn" value=".">.</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn calculator-operator" value="=">=</button>
-              </div>
-              <div class="col-xs-3">
-                <button class="calculator-btn calculator-operator" value="+">+</button>
-              </div>
-              <div class="col-xs-4">
-                <button class="calculator-btn" value="(">(</button>
-              </div>
-              <div class="col-xs-4">
-                <button class="calculator-btn" value=")">)</button>
-              </div>
-              <div class="col-xs-4">
-                <button class="calculator-btn calculator-operator" value="c">clear</button>
-              </div>
-            </div><!--End calculator-body-->
-          </div><!--End jumbotron -->
-        </div><!--End calculator col-->
+    </div> <!-- End about container -->
+    <div class="anchor container" id="calculator">
+      <div class="row" class="calculator-row">
+          <div class="col-xs-6 col-xs-offset-3">
+            <div class="jumbotron">
+              <h4>This is a calculator written in Javascript</h4>
+              <div class="calculator-body">
+                <div class="calculator-text">
+                  <p id="calculator-output"></p>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn" value="1">1</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn" value="2">2</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn" value="3">3</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn calculator-operator" value="/">/</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn" value="4">4</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn" value="5">5</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn" value="6">6</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn calculator-operator" value="*">*</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn" value="7">7</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn" value="8">8</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn" value="9">9</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn calculator-operator" value="-">-</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn" value="0">0</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn" value=".">.</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn calculator-operator" value="=">=</button>
+                </div>
+                <div class="col-xs-3">
+                  <button class="calculator-btn calculator-operator" value="+">+</button>
+                </div>
+                <div class="col-xs-4">
+                  <button class="calculator-btn" value="(">(</button>
+                </div>
+                <div class="col-xs-4">
+                  <button class="calculator-btn" value=")">)</button>
+                </div>
+                <div class="col-xs-4">
+                  <button class="calculator-btn calculator-operator" value="c">clear</button>
+                </div>
+              </div><!--End calculator-body-->
+            </div><!--End jumbotron -->
+          </div><!--End calculator col-->
       </div><!-- End calculator row -->
-    </div> <!-- End menu container -->
+    </div><!-- End calculator container -->
     <div class="anchor container" id="faq">
       <div class="row">
-        <h2 class="learn-more">See my Resume:</h2>
-        <div class="modal-button">
-          <button class="btn btn-primary" data-toggle="modal" data-target=".resume-modal">Resume</button>
-        </div>
-      </div><!-- End button row -->
-      <div class="modal fade resume-modal" tab-index="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal fade resume-modal" id="resasume" tab-index="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialogue modal-lg">
           <div class="modal-content">
             <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
               <h4 class="modal-title" id="myModalLabel">Resume</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
               <embed id="resume" src="img/James-Lipe-Resume.pdf">
@@ -214,6 +233,11 @@
           </div>
         </div>
       </div><!-- End modal -->
+        <h2 class="learn-more">See my Resume:</h2>
+        <div class="modal-button">
+          <button class="btn btn-primary" data-toggle="modal" data-target=".resume-modal">Resume</button>
+        </div>
+      </div><!-- End button row -->
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="headingOne">
@@ -244,7 +268,7 @@
           </div>
           <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="panel-body">
-              Growing up I went to away to Camp Mondamin every summer for six weeks. Camp Mondamin is an outdoors camp for boys 8 to 17 focused on taking trips in kayaking, mountain biking, climbing, and hiking. The skills needed to live away from my parents and a love of mountain biking are two things that are largely due to going to this camp. Mondamin influenced me to go to highschool at Colorado Rocky Mountain School which is a boarding school focused on outdoor education located in Carbondale, Colorado. After my Freshman and Junior years at Northeatern I worked for three months at this camp teaching mountain biking. The photos in the carousel are from Summer 2016.
+              Growing up I went to away to Camp Mondamin every summer for six weeks. Camp Mondamin is an outdoors camp for boys 8 to 17 focused on taking trips in kayaking, mountain biking, climbing, and hiking. The skills needed to live away from my parents and a love of mountain biking are two things that are largely due to going to this camp. Mondamin influenced me to go to highschool at Colorado Rocky Mountain School which is a boarding school focused on outdoor education located in Carbondale, Colorado. After my Freshman and Junior years at Northeastern I worked for three months at this camp teaching mountain biking. The photos in the carousel are from Summer 2016.
             </div>
           </div>
         </div>

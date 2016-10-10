@@ -57,6 +57,9 @@ nav .navbar-left{
 	background-color:pink;
 }
 
+/**** About ****/
+
+
 /**** Calculator ****/
 .calculator-body{
 	border: solid 2px;
@@ -150,6 +153,20 @@ nav .navbar-left{
 	width: 100%;
 	padding: 10px;
 }
+
+.kinetics-modal{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#kinetics-modal{
+	height: 500px;
+	width: 100%;
+	padding: 10px;
+}
+
+
+
 
 /**** Contact ****/
 #contactsection{
